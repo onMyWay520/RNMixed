@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47887197197A61EB9A4C6D23 /* Pods_RNAndNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */; };
+		5632C056208F13A500DB3A79 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632C055208F13A500DB3A79 /* RNViewController.m */; };
+		564AA532208EDBB800D5FAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA531208EDBB800D5FAF1 /* AppDelegate.m */; };
+		564AA535208EDBB800D5FAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA534208EDBB800D5FAF1 /* ViewController.m */; };
+		564AA538208EDBB900D5FAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564AA536208EDBB900D5FAF1 /* Main.storyboard */; };
+		564AA53A208EDBB900D5FAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564AA539208EDBB900D5FAF1 /* Assets.xcassets */; };
+		564AA53D208EDBB900D5FAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564AA53B208EDBB900D5FAF1 /* LaunchScreen.storyboard */; };
+		564AA540208EDBB900D5FAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA53F208EDBB900D5FAF1 /* main.m */; };
+		564AA54A208EDBB900D5FAF1 /* RNAndNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA549208EDBB900D5FAF1 /* RNAndNativeTests.m */; };
+		564AA555208EDBB900D5FAF1 /* RNAndNativeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA554208EDBB900D5FAF1 /* RNAndNativeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		564AA546208EDBB900D5FAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 564AA525208EDBB800D5FAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 564AA52C208EDBB800D5FAF1;
+			remoteInfo = RNAndNative;
+		};
+		564AA551208EDBB900D5FAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 564AA525208EDBB800D5FAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 564AA52C208EDBB800D5FAF1;
+			remoteInfo = RNAndNative;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAndNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5632C054208F13A500DB3A79 /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		5632C055208F13A500DB3A79 /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		564AA52D208EDBB800D5FAF1 /* RNAndNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNAndNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		564AA530208EDBB800D5FAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		564AA531208EDBB800D5FAF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		564AA533208EDBB800D5FAF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		564AA534208EDBB800D5FAF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		564AA537208EDBB900D5FAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		564AA539208EDBB900D5FAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		564AA53C208EDBB900D5FAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		564AA53E208EDBB900D5FAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564AA53F208EDBB900D5FAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		564AA545208EDBB900D5FAF1 /* RNAndNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNAndNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		564AA549208EDBB900D5FAF1 /* RNAndNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAndNativeTests.m; sourceTree = "<group>"; };
+		564AA54B208EDBB900D5FAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564AA550208EDBB900D5FAF1 /* RNAndNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNAndNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		564AA554208EDBB900D5FAF1 /* RNAndNativeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAndNativeUITests.m; sourceTree = "<group>"; };
+		564AA556208EDBB900D5FAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09E756B583FFB57C422FE33 /* Pods-RNAndNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAndNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNAndNative/Pods-RNAndNative.debug.xcconfig"; sourceTree = "<group>"; };
+		B61BEF71AA93BBC0EDDE32E6 /* Pods-RNAndNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAndNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNAndNative/Pods-RNAndNative.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		564AA52A208EDBB800D5FAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47887197197A61EB9A4C6D23 /* Pods_RNAndNative.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA542208EDBB900D5FAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA54D208EDBB900D5FAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5AF3C7A362342C7F5A0937 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A09E756B583FFB57C422FE33 /* Pods-RNAndNative.debug.xcconfig */,
+				B61BEF71AA93BBC0EDDE32E6 /* Pods-RNAndNative.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		564AA524208EDBB800D5FAF1 = {
+			isa = PBXGroup;
+			children = (
+				564AA52F208EDBB800D5FAF1 /* RNAndNative */,
+				564AA548208EDBB900D5FAF1 /* RNAndNativeTests */,
+				564AA553208EDBB900D5FAF1 /* RNAndNativeUITests */,
+				564AA52E208EDBB800D5FAF1 /* Products */,
+				4C5AF3C7A362342C7F5A0937 /* Pods */,
+				668A8F56F5BC5CC6AE8CD0E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		564AA52E208EDBB800D5FAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				564AA52D208EDBB800D5FAF1 /* RNAndNative.app */,
+				564AA545208EDBB900D5FAF1 /* RNAndNativeTests.xctest */,
+				564AA550208EDBB900D5FAF1 /* RNAndNativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		564AA52F208EDBB800D5FAF1 /* RNAndNative */ = {
+			isa = PBXGroup;
+			children = (
+				564AA530208EDBB800D5FAF1 /* AppDelegate.h */,
+				564AA531208EDBB800D5FAF1 /* AppDelegate.m */,
+				564AA533208EDBB800D5FAF1 /* ViewController.h */,
+				564AA534208EDBB800D5FAF1 /* ViewController.m */,
+				5632C054208F13A500DB3A79 /* RNViewController.h */,
+				5632C055208F13A500DB3A79 /* RNViewController.m */,
+				564AA536208EDBB900D5FAF1 /* Main.storyboard */,
+				564AA539208EDBB900D5FAF1 /* Assets.xcassets */,
+				564AA53B208EDBB900D5FAF1 /* LaunchScreen.storyboard */,
+				564AA53E208EDBB900D5FAF1 /* Info.plist */,
+				564AA53F208EDBB900D5FAF1 /* main.m */,
+			);
+			path = RNAndNative;
+			sourceTree = "<group>";
+		};
+		564AA548208EDBB900D5FAF1 /* RNAndNativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				564AA549208EDBB900D5FAF1 /* RNAndNativeTests.m */,
+				564AA54B208EDBB900D5FAF1 /* Info.plist */,
+			);
+			path = RNAndNativeTests;
+			sourceTree = "<group>";
+		};
+		564AA553208EDBB900D5FAF1 /* RNAndNativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				564AA554208EDBB900D5FAF1 /* RNAndNativeUITests.m */,
+				564AA556208EDBB900D5FAF1 /* Info.plist */,
+			);
+			path = RNAndNativeUITests;
+			sourceTree = "<group>";
+		};
+		668A8F56F5BC5CC6AE8CD0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		564AA52C208EDBB800D5FAF1 /* RNAndNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564AA559208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNative" */;
+			buildPhases = (
+				688F06B5E653E71025B9D978 /* [CP] Check Pods Manifest.lock */,
+				564AA529208EDBB800D5FAF1 /* Sources */,
+				564AA52A208EDBB800D5FAF1 /* Frameworks */,
+				564AA52B208EDBB800D5FAF1 /* Resources */,
+				03B5B0AAA766D925BE5851CA /* [CP] Embed Pods Frameworks */,
+				C291D0F537E472825044E264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNAndNative;
+			productName = RNAndNative;
+			productReference = 564AA52D208EDBB800D5FAF1 /* RNAndNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+		564AA544208EDBB900D5FAF1 /* RNAndNativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564AA55C208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNativeTests" */;
+			buildPhases = (
+				564AA541208EDBB900D5FAF1 /* Sources */,
+				564AA542208EDBB900D5FAF1 /* Frameworks */,
+				564AA543208EDBB900D5FAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564AA547208EDBB900D5FAF1 /* PBXTargetDependency */,
+			);
+			name = RNAndNativeTests;
+			productName = RNAndNativeTests;
+			productReference = 564AA545208EDBB900D5FAF1 /* RNAndNativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		564AA54F208EDBB900D5FAF1 /* RNAndNativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564AA55F208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNativeUITests" */;
+			buildPhases = (
+				564AA54C208EDBB900D5FAF1 /* Sources */,
+				564AA54D208EDBB900D5FAF1 /* Frameworks */,
+				564AA54E208EDBB900D5FAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564AA552208EDBB900D5FAF1 /* PBXTargetDependency */,
+			);
+			name = RNAndNativeUITests;
+			productName = RNAndNativeUITests;
+			productReference = 564AA550208EDBB900D5FAF1 /* RNAndNativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		564AA525208EDBB800D5FAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "杭州拼便宜网络科技有限公司";
+				TargetAttributes = {
+					564AA52C208EDBB800D5FAF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					564AA544208EDBB900D5FAF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 564AA52C208EDBB800D5FAF1;
+					};
+					564AA54F208EDBB900D5FAF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 564AA52C208EDBB800D5FAF1;
+					};
+				};
+			};
+			buildConfigurationList = 564AA528208EDBB800D5FAF1 /* Build configuration list for PBXProject "RNAndNative" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 564AA524208EDBB800D5FAF1;
+			productRefGroup = 564AA52E208EDBB800D5FAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				564AA52C208EDBB800D5FAF1 /* RNAndNative */,
+				564AA544208EDBB900D5FAF1 /* RNAndNativeTests */,
+				564AA54F208EDBB900D5FAF1 /* RNAndNativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		564AA52B208EDBB800D5FAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564AA53D208EDBB900D5FAF1 /* LaunchScreen.storyboard in Resources */,
+				564AA53A208EDBB900D5FAF1 /* Assets.xcassets in Resources */,
+				564AA538208EDBB900D5FAF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA543208EDBB900D5FAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA54E208EDBB900D5FAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B5B0AAA766D925BE5851CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNAndNative/Pods-RNAndNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688F06B5E653E71025B9D978 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C291D0F537E472825044E264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNAndNative/Pods-RNAndNative-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		564AA529208EDBB800D5FAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5632C056208F13A500DB3A79 /* RNViewController.m in Sources */,
+				564AA535208EDBB800D5FAF1 /* ViewController.m in Sources */,
+				564AA540208EDBB900D5FAF1 /* main.m in Sources */,
+				564AA532208EDBB800D5FAF1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA541208EDBB900D5FAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564AA54A208EDBB900D5FAF1 /* RNAndNativeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564AA54C208EDBB900D5FAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564AA555208EDBB900D5FAF1 /* RNAndNativeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		564AA547208EDBB900D5FAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 564AA52C208EDBB800D5FAF1 /* RNAndNative */;
+			targetProxy = 564AA546208EDBB900D5FAF1 /* PBXContainerItemProxy */;
+		};
+		564AA552208EDBB900D5FAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 564AA52C208EDBB800D5FAF1 /* RNAndNative */;
+			targetProxy = 564AA551208EDBB900D5FAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		564AA536208EDBB900D5FAF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564AA537208EDBB900D5FAF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		564AA53B208EDBB900D5FAF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564AA53C208EDBB900D5FAF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		564AA557208EDBB900D5FAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		564AA558208EDBB900D5FAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		564AA55A208EDBB900D5FAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09E756B583FFB57C422FE33 /* Pods-RNAndNative.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		564AA55B208EDBB900D5FAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61BEF71AA93BBC0EDDE32E6 /* Pods-RNAndNative.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		564AA55D208EDBB900D5FAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNativeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNAndNative.app/RNAndNative";
+			};
+			name = Debug;
+		};
+		564AA55E208EDBB900D5FAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNativeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNAndNative.app/RNAndNative";
+			};
+			name = Release;
+		};
+		564AA560208EDBB900D5FAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNativeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RNAndNative;
+			};
+			name = Debug;
+		};
+		564AA561208EDBB900D5FAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RNAndNativeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pinpianyi.com.RNAndNativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RNAndNative;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		564AA528208EDBB800D5FAF1 /* Build configuration list for PBXProject "RNAndNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564AA557208EDBB900D5FAF1 /* Debug */,
+				564AA558208EDBB900D5FAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564AA559208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564AA55A208EDBB900D5FAF1 /* Debug */,
+				564AA55B208EDBB900D5FAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564AA55C208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564AA55D208EDBB900D5FAF1 /* Debug */,
+				564AA55E208EDBB900D5FAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564AA55F208EDBB900D5FAF1 /* Build configuration list for PBXNativeTarget "RNAndNativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564AA560208EDBB900D5FAF1 /* Debug */,
+				564AA561208EDBB900D5FAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 564AA525208EDBB800D5FAF1 /* Project object */;
+}
