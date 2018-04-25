@@ -3,12 +3,11 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-    NativeModules
+  View,NativeModules, NativeAppEventEmitter
 } from 'react-native';
 
 var CalendarManager = NativeModules.CalendarManager;
-
+var nativeAppEv;
 class RNTest extends React.Component {
     // 构造
     constructor(props) {
@@ -26,6 +25,10 @@ class RNTest extends React.Component {
           <Text style={styles.welcome2} onPress={()=>this.passValueToNativeTwo()}>点击向原生传字符串和字典</Text>
           <Text style={styles.welcome1} onPress={()=>this.passValueToNativeThree()}>点击往原生传字符串+日期</Text>
           <Text style={styles.welcome2} onPress={()=>this.callBackOne()}>点击调原生+回调</Text>
+          <Text style={styles.welcome1} onPress={()=>this.callBackTwo()}>Promises</Text>
+          <Text style={styles.welcome2} onPress={()=>this.useNativeValue()}>使用原生定义的常量</Text>
+          <Text style={styles.welcome1}>我是原生传过来的:{this.state.str}</Text>
+
       </View>
     );
   }
@@ -54,6 +57,37 @@ class RNTest extends React.Component {
 
         })
     }
+    //Promise回调
+    async callBackTwo(){
+        try{
+            var events=await CalendarManager.testCallbackEventTwo();
+            alert(events)
+        }catch(e){
+            console.error(e);
+        }
+    }
+    //使用原生定义的常量
+    useNativeValue = ()=>{
+        alert(CalendarManager.ValueOne)
+    }
+
+    componentDidMount() {
+        CalendarManager.RNCallOC();
+        nativeAppEv= NativeAppEventEmitter.addListener(
+            'EventReminder',
+            (reminder) => {
+                this.setState({
+                    str:reminder
+                })
+            }
+        );
+
+    }
+
+    componentWillUnmount() {
+        nativeAppEv.remove();
+    }
+
 
 }
 

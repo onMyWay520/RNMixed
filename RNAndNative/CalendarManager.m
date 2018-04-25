@@ -8,11 +8,14 @@
 
 #import "CalendarManager.h"
 #import "XHToast.h"
-
+#import "RCTBridge.h"
+#import "RCTEventDispatcher.h"
 @implementation CalendarManager
 RCT_EXPORT_MODULE();
+@synthesize bridge = _bridge;
 // 接收传过来的 NSString
 RCT_EXPORT_METHOD(addEventOne:(NSString *)name){
+    
 //    [XHToast showCenterWithText:name];
     NSLog(@"接收传过来的NSString+NSString: %@", name);
 }
@@ -32,10 +35,33 @@ RCT_EXPORT_METHOD(addEventThree:(NSString *)name date:(NSDate *)date)
 RCT_EXPORT_METHOD(testCallbackEventOne:(NSString *)name callback:(RCTResponseSenderBlock)callback)
 {
     NSLog(@"%@",name);
-    NSArray *events=@[@"1", @"2", @"3",@"4"]; //准备回调回去的数据
+    NSArray *events=@[@"我", @"是", @"永",@"超"]; //准备回调回去的数据
     callback(@[[NSNull null],events]);
 //    callback(@[name,events]);
 
 }
+//Promises
+//  对外提供调用方法,演示Promise使用
+RCT_REMAP_METHOD(testCallbackEventTwo,
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject){
+    NSArray *events=@[@"one",@"two",@"three"];
+    if (events) {
+        resolve(events);
+    }
+    else{
+        NSError *error=[NSError errorWithDomain:@"我是Promise回调错误信息..." code:101 userInfo:nil];
+        reject(@"no_events", @"There were no events", error);
+        
+    }
+    
+}
+- (NSDictionary *)constantsToExport
+{
+    return @{ @"ValueOne": @"我是从原生定义的~" };
+}
 
+RCT_EXPORT_METHOD(RNCallOC){
+    [self.bridge.eventDispatcher sendAppEventWithName:@"EventReminder" body:@"永超"];
+}
 @end

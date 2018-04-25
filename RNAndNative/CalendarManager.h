@@ -11,5 +11,5 @@
 #import <React/RCTLog.h>
 #import <React/RCTAlertManager.h>
 @interface CalendarManager : NSObject<RCTBridgeModule>
-
+- (void)callN;
 @end
