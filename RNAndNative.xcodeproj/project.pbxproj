@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		47887197197A61EB9A4C6D23 /* Pods_RNAndNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */; };
 		5632C056208F13A500DB3A79 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632C055208F13A500DB3A79 /* RNViewController.m */; };
+		5633CECD2090260400DBDC51 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633CECC2090260400DBDC51 /* CalendarManager.m */; };
+		5633CEDC20905B3600DBDC51 /* XHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633CEDB20905B3600DBDC51 /* XHToast.m */; };
 		564AA532208EDBB800D5FAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA531208EDBB800D5FAF1 /* AppDelegate.m */; };
 		564AA535208EDBB800D5FAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AA534208EDBB800D5FAF1 /* ViewController.m */; };
 		564AA538208EDBB900D5FAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564AA536208EDBB900D5FAF1 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 		1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAndNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5632C054208F13A500DB3A79 /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
 		5632C055208F13A500DB3A79 /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		5633CECB2090260400DBDC51 /* CalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		5633CECC2090260400DBDC51 /* CalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
+		5633CEDA20905B3600DBDC51 /* XHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHToast.h; sourceTree = "<group>"; };
+		5633CEDB20905B3600DBDC51 /* XHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHToast.m; sourceTree = "<group>"; };
 		564AA52D208EDBB800D5FAF1 /* RNAndNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNAndNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564AA530208EDBB800D5FAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		564AA531208EDBB800D5FAF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +101,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5633CED920905B3600DBDC51 /* XHToastHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5633CEDA20905B3600DBDC51 /* XHToast.h */,
+				5633CEDB20905B3600DBDC51 /* XHToast.m */,
+			);
+			path = XHToastHUD;
+			sourceTree = "<group>";
+		};
 		564AA524208EDBB800D5FAF1 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,9 @@
 				564AA534208EDBB800D5FAF1 /* ViewController.m */,
 				5632C054208F13A500DB3A79 /* RNViewController.h */,
 				5632C055208F13A500DB3A79 /* RNViewController.m */,
+				5633CECB2090260400DBDC51 /* CalendarManager.h */,
+				5633CECC2090260400DBDC51 /* CalendarManager.m */,
+				5633CED920905B3600DBDC51 /* XHToastHUD */,
 				564AA536208EDBB900D5FAF1 /* Main.storyboard */,
 				564AA539208EDBB900D5FAF1 /* Assets.xcassets */,
 				564AA53B208EDBB900D5FAF1 /* LaunchScreen.storyboard */,
@@ -345,6 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5633CECD2090260400DBDC51 /* CalendarManager.m in Sources */,
+				5633CEDC20905B3600DBDC51 /* XHToast.m in Sources */,
 				5632C056208F13A500DB3A79 /* RNViewController.m in Sources */,
 				564AA535208EDBB800D5FAF1 /* ViewController.m in Sources */,
 				564AA540208EDBB900D5FAF1 /* main.m in Sources */,
