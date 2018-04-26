@@ -10,6 +10,9 @@ var CalendarManager = NativeModules.CalendarManager;
 var nativeAppEv;
 class RNTest extends React.Component {
     // 构造
+    //在ES6中，在子类的constructor中必须先调用super才能引用this,
+    // super(props)的目的：在constructor中可以使用this.props
+    //props是在父组件中指定，而且一经指定，在被指定的组件的生命周期中则不再改变。 对于需要改变的数据，我们需要使用state。
     constructor(props) {
         super(props);
         // 初始状态
@@ -58,21 +61,28 @@ class RNTest extends React.Component {
         })
     }
     //Promise回调
+    //可以在一个声明了async的异步函数内使用await关键字来调用，
+    // 并等待其结果返回。（虽然这样写着看起来像同步操作，但实际仍然是异步的，并不会阻塞执行来等待）。
     async callBackTwo(){
         try{
             var events=await CalendarManager.testCallbackEventTwo();
             alert(events)
-        }catch(e){
+        }
+        catch(e){
             console.error(e);
         }
     }
     //使用原生定义的常量
+    //注意这个常量仅仅在初始化的时候导出了一次，所以即使你在运行期间改变constantToExport返回的值，
+    // 也不会影响到JavaScript环境下所得到的结果。
     useNativeValue = ()=>{
         alert(CalendarManager.ValueOne)
     }
 
     componentDidMount() {
         CalendarManager.RNCallOC();
+        //NativeAppEventEmitter， 用于创建监听事件。对组件监听
+        //addListener 是用于鼠标，键盘等特殊元素的一些监听
         nativeAppEv= NativeAppEventEmitter.addListener(
             'EventReminder',
             (reminder) => {
@@ -85,7 +95,7 @@ class RNTest extends React.Component {
     }
 
     componentWillUnmount() {
-        nativeAppEv.remove();
+        nativeAppEv.remove();//取消订阅。类似iOS中的通知
     }
 
 
