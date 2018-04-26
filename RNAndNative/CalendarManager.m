@@ -10,6 +10,8 @@
 #import "XHToast.h"
 #import "RCTBridge.h"
 #import "RCTEventDispatcher.h"
+#import "RCTEventEmitter.h"
+
 /*
  1.RCTBridgeModule
  
@@ -60,7 +62,7 @@ RCT_EXPORT_METHOD(addEventTwo:(NSString *)name details:(NSDictionary *)details)
 // 接收传过来的 NSString + date日期
 RCT_EXPORT_METHOD(addEventThree:(NSString *)name date:(NSDate *)date)
 {
-     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+     NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd"];
     RCTLogInfo(@"接收传过来的NSString+NSDictionary: %@ %@", name, [formatter stringFromDate:date]);
 }
@@ -104,5 +106,24 @@ RCT_REMAP_METHOD(testCallbackEventTwo,
 */
 RCT_EXPORT_METHOD(RNCallOC){
     [self.bridge.eventDispatcher sendAppEventWithName:@"EventReminder" body:@"永超"];
+    
+}
+RCT_REMAP_METHOD(printDate, date1:(nonnull NSNumber *)d1 date2:(nonnull NSNumber *)d2  event:(RCTResponseSenderBlock)callback){
+    NSDate* dt1 = [RCTConvert NSDate:d1];
+    NSDate* dt2 = [RCTConvert NSDate:d2];
+    NSComparisonResult result = [dt1 compare:dt2];
+    NSArray *events;
+    switch(result){
+        case NSOrderedAscending:
+            events=@[@"比较结果开始时间小于结束时间"];
+             break;
+        case NSOrderedDescending:
+            events=@[@"比较结果开始时间大于结束时间"];
+             break;
+        default:
+            events=@[@"比较结果开始时间等于结束时间"];
+            break;
+    }
+    callback(@[[NSNull null], events]);
 }
 @end
