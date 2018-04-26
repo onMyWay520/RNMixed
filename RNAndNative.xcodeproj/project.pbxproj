@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47887197197A61EB9A4C6D23 /* Pods_RNAndNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */; };
 		562F80342091A2CD00D67E4F /* EnumConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 562F80332091A2CD00D67E4F /* EnumConstants.m */; };
+		562F804D2091BF4D00D67E4F /* MyThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 562F804C2091BF4D00D67E4F /* MyThread.m */; };
 		5632C056208F13A500DB3A79 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632C055208F13A500DB3A79 /* RNViewController.m */; };
 		5633CECD2090260400DBDC51 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633CECC2090260400DBDC51 /* CalendarManager.m */; };
 		5633CEDC20905B3600DBDC51 /* XHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633CEDB20905B3600DBDC51 /* XHToast.m */; };
@@ -43,6 +44,8 @@
 		1C001086D802DC5E6E9E5477 /* Pods_RNAndNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAndNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562F80322091A2CD00D67E4F /* EnumConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumConstants.h; sourceTree = "<group>"; };
 		562F80332091A2CD00D67E4F /* EnumConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnumConstants.m; sourceTree = "<group>"; };
+		562F804B2091BF4D00D67E4F /* MyThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyThread.h; sourceTree = "<group>"; };
+		562F804C2091BF4D00D67E4F /* MyThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyThread.m; sourceTree = "<group>"; };
 		5632C054208F13A500DB3A79 /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
 		5632C055208F13A500DB3A79 /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
 		5633CECB2090260400DBDC51 /* CalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				5632C055208F13A500DB3A79 /* RNViewController.m */,
 				5633CECB2090260400DBDC51 /* CalendarManager.h */,
 				5633CECC2090260400DBDC51 /* CalendarManager.m */,
+				562F804B2091BF4D00D67E4F /* MyThread.h */,
+				562F804C2091BF4D00D67E4F /* MyThread.m */,
 				562F80322091A2CD00D67E4F /* EnumConstants.h */,
 				562F80332091A2CD00D67E4F /* EnumConstants.m */,
 				5633CED920905B3600DBDC51 /* XHToastHUD */,
@@ -371,6 +376,7 @@
 				5633CECD2090260400DBDC51 /* CalendarManager.m in Sources */,
 				562F80342091A2CD00D67E4F /* EnumConstants.m in Sources */,
 				5633CEDC20905B3600DBDC51 /* XHToast.m in Sources */,
+				562F804D2091BF4D00D67E4F /* MyThread.m in Sources */,
 				5632C056208F13A500DB3A79 /* RNViewController.m in Sources */,
 				564AA535208EDBB800D5FAF1 /* ViewController.m in Sources */,
 				564AA540208EDBB900D5FAF1 /* main.m in Sources */,
