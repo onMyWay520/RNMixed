@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 var CalendarManager = NativeModules.CalendarManager;
+var  enumConstants=NativeModules.EnumConstants;
 var nativeAppEv;
 class RNTest extends React.Component {
     // 构造
@@ -30,40 +31,24 @@ class RNTest extends React.Component {
   render() {
 
     return (
+          <View style={styles.container}>
+          <Text style={styles.welcome1} onPress={()=>this.passValueToNativeOne()}>点击往原生传字符串</Text>
+          <Text style={styles.welcome2} onPress={()=>this.passValueToNativeTwo()}>点击向原生传字符串和字典</Text>
+          <Text style={styles.welcome1} onPress={()=>this.passValueToNativeThree()}>点击往原生传字符串+日期</Text>
+          <Text style={styles.welcome2} onPress={()=>this.callBackOne()}>点击调原生+回调</Text>
+          <Text style={styles.welcome1} onPress={()=>this.callBackTwo()}>Promises</Text>
+          <Text style={styles.welcome2} onPress={()=>this.useNativeValue()}>使用原生定义的常量</Text>
+          <Text style={styles.welcome1}>我是原生传过来的:{this.state.str}</Text>
+              <Text style={styles.welcome2} onPress={()=>this.onPressForEnum()}>枚举应用</Text>
 
-          <View style={{marginTop:40}}>
-              {/*<View style={styles.container}>*/}
-          {/*<Text style={styles.welcome1} onPress={()=>this.passValueToNativeOne()}>点击往原生传字符串</Text>*/}
-          {/*<Text style={styles.welcome2} onPress={()=>this.passValueToNativeTwo()}>点击向原生传字符串和字典</Text>*/}
-          {/*<Text style={styles.welcome1} onPress={()=>this.passValueToNativeThree()}>点击往原生传字符串+日期</Text>*/}
-          {/*<Text style={styles.welcome2} onPress={()=>this.callBackOne()}>点击调原生+回调</Text>*/}
-          {/*<Text style={styles.welcome1} onPress={()=>this.callBackTwo()}>Promises</Text>*/}
-          {/*<Text style={styles.welcome2} onPress={()=>this.useNativeValue()}>使用原生定义的常量</Text>*/}
-          {/*<Text style={styles.welcome1}>我是原生传过来的:{this.state.str}</Text>*/}
-          <DatePickerIOS
-              date={this.state.startDate}
-              mode='date'
-              onDateChange={this.onStartDateChange.bind(this)} />
-          <DatePickerIOS
-              date={this.state.endDate}
-              mode='date'
-              onDateChange={this.onEndDateChange.bind(this)} />
-          <Button onPress={this.onPressDateValidation.bind(this)} title="比较时间" />
+
 
       </View>
     );
   }
-    onPressDateValidation() {
-       // CalendarManager.printDate(this.state.startDate.getTime(), this.state.endDate.getTime());
-        CalendarManager.printDate(this.state.startDate.getTime(), this.state.endDate.getTime(), (err, result) => {
-            alert(result);
-        });
-    }
-    onStartDateChange(date) {
-        this.setState({startDate: date});
-    }
-    onEndDateChange(date) {
-        this.setState({endDate: date});
+
+    onPressForEnum() {
+        alert(enumConstants.statusBarAnimationSlide);
     }
     // 传原生一个字符串
     passValueToNativeOne = ()=>{
@@ -144,7 +129,7 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     welcome2: {
-        fontSize: 20,
+        fontSize: 25,
         textAlign: 'center',
         margin: 10,
         color:"red"
