@@ -52,7 +52,7 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(addEventOne:(NSString *)name){
     
 //    [XHToast showCenterWithText:name];
-    NSLog(@"接收传过来的NSString+NSString: %@", name);
+    NSLog(@"接收传过来的NSString: %@", name);
 }
 // 接收传过来的 NSString + NSDictionary
 RCT_EXPORT_METHOD(addEventTwo:(NSString *)name details:(NSDictionary *)details)
