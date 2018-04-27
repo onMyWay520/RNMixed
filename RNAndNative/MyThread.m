@@ -19,7 +19,8 @@ RCT_EXPORT_METHOD(doSomethingExpensive:(NSString *)param callback:(RCTResponseSe
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 在后台执行耗时操作
         // You can invoke callback from any thread/queue
-        callback(@[[NSNull null],@"耗时操作执行完成..."]);
+        NSString *str=[NSString stringWithFormat:@"耗时操作%@执行完成...",param];
+        callback(@[[NSNull null],str]);
     });
 }
 @end

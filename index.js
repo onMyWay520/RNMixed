@@ -12,6 +12,7 @@ import {
 
 var CalendarManager = NativeModules.CalendarManager;
 var  enumConstants=NativeModules.EnumConstants;
+var  myThread=NativeModules.MyThread;
 var nativeAppEv;
 class RNTest extends React.Component {
     // 构造
@@ -40,12 +41,22 @@ class RNTest extends React.Component {
           <Text style={styles.welcome2} onPress={()=>this.useNativeValue()}>使用原生定义的常量</Text>
           <Text style={styles.welcome1}>我是原生传过来的:{this.state.str}</Text>
               <Text style={styles.welcome2} onPress={()=>this.onPressForEnum()}>枚举应用</Text>
-
+              <Text style={styles.welcome1} onPress={()=>this.threadTest()}>线程操作</Text>
 
 
       </View>
     );
   }
+   threadTest=()=>{
+        myThread.doSomethingExpensive(('1234'),(error,event)=>{
+            if (error){
+                console.error(error);
+            }
+            else {
+                alert(event);
+            }
+        })
+   }
 
     onPressForEnum() {
         alert(enumConstants.statusBarAnimationSlide);

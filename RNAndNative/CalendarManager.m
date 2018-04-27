@@ -62,8 +62,8 @@ RCT_EXPORT_METHOD(addEventTwo:(NSString *)name details:(NSDictionary *)details)
 // 接收传过来的 NSString + date日期
 RCT_EXPORT_METHOD(addEventThree:(NSString *)name date:(NSDate *)date)
 {
-     NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
     RCTLogInfo(@"接收传过来的NSString+NSDictionary: %@ %@", name, [formatter stringFromDate:date]);
 }
 //  对外提供调用方法,演示Callback
