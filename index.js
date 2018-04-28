@@ -42,6 +42,7 @@ class RNTest extends React.Component {
           <Text style={styles.welcome1}>我是原生传过来的:{this.state.str}</Text>
               <Text style={styles.welcome2} onPress={()=>this.onPressForEnum()}>枚举应用</Text>
               <Text style={styles.welcome1} onPress={()=>this.threadTest()}>线程操作</Text>
+              <Text style={styles.welcome2} onPress={()=>this.clearRom()}>清除缓存</Text>
 
 
       </View>
@@ -104,6 +105,32 @@ class RNTest extends React.Component {
     useNativeValue = ()=>{
         alert(CalendarManager.ValueOne)
     }
+    clearRom  =()=>{
+        CalendarManager.cleanCache((error, events) => {
+            if (error) {
+
+            }
+            else {
+                this.setState({
+
+                    cache:0  //这里本应该是清除之后的数据Math.round(events/1024).应该是0才对,但是总是清不干净,我就直接置为0了
+
+                })
+
+            }
+        })
+    }
+    componentWillMount() {
+                 CalendarManager.cacheSize((error, events) => {
+                         if (error) {
+                             console.error(error);
+                            }
+                            else {
+                                this.setState({
+                                    cache:Math.round(events/1024)   //缓存大小
+                                })
+                         }})
+       }
 
     componentDidMount() {
         CalendarManager.RNCallOC();

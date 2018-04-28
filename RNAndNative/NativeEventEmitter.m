@@ -28,5 +28,8 @@
         [self sendEventWithName:@"EventReminder" body:@{@"name": eventName}];
     }
 }
-
+- (NSArray<NSString *> *)supportedEvents
+{
+    return @[@"EventReminder"];
+}
 @end

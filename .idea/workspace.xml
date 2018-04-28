@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0dbea9-f8ad-4d11-a7ce-b2d4da947c4f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/RNAndNative/NativeEventEmitter.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/RNAndNative/NativeEventEmitter.m" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RNAndNative.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/RNAndNative.xcodeproj/project.pbxproj" />
       <change beforePath="$PROJECT_DIR$/RNAndNative/CalendarManager.m" afterPath="$PROJECT_DIR$/RNAndNative/CalendarManager.m" />
       <change beforePath="$PROJECT_DIR$/RNAndNative/MyThread.m" afterPath="$PROJECT_DIR$/RNAndNative/MyThread.m" />
+      <change beforePath="$PROJECT_DIR$/RNAndNative/NativeEventEmitter.m" afterPath="$PROJECT_DIR$/RNAndNative/NativeEventEmitter.m" />
+      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2508">
-              <caret line="114" column="31" lean-forward="true" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+            <state relative-caret-position="273">
+              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -49,6 +48,8 @@
     <findStrings>
       <find>useNativeValue</find>
       <find>addListener</find>
+      <find>calendarManagerEmitter</find>
+      <find>threadTest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,12 +144,13 @@
       <workItem from="1524558354785" duration="1118000" />
       <workItem from="1524618047956" duration="11468000" />
       <workItem from="1524704219184" duration="8732000" />
-      <workItem from="1524790743755" duration="3161000" />
+      <workItem from="1524790743755" duration="3753000" />
+      <workItem from="1524876969574" duration="1986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24479000" />
+    <option name="totallyTimeSpent" value="27057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1343" y="91" width="1819" height="989" extended-state="0" />
@@ -206,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="114" column="31" lean-forward="true" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+        <state relative-caret-position="273">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

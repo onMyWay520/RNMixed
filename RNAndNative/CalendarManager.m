@@ -55,6 +55,7 @@ RCT_EXPORT_METHOD(addEventOne:(NSString *)name){
     NSLog(@"接收传过来的NSString: %@", name);
 }
 // 接收传过来的 NSString + NSDictionary
+//参数的个数越来越多，其中有一些可能是可选的参数。在这种情况下我们应该考虑修改我们的API，用一个dictionary来存放所有的事件参数
 RCT_EXPORT_METHOD(addEventTwo:(NSString *)name details:(NSDictionary *)details)
 {
     RCTLogInfo(@"接收传过来的NSString+NSDictionary: %@ %@", name, details);
@@ -66,6 +67,7 @@ RCT_EXPORT_METHOD(addEventThree:(NSString *)name date:(NSDate *)date)
     [formatter setDateFormat:@"yyyy-MM-dd"];
     RCTLogInfo(@"接收传过来的NSString+NSDictionary: %@ %@", name, [formatter stringFromDate:date]);
 }
+//原生模块还支持一种特殊的参数——回调函数。它提供了一个函数来把返回值传回给JavaScript。
 //  对外提供调用方法,演示Callback
 //RCTResponseSenderBlock只接受一个参数——传递给JavaScript回调函数的参数数组。
 RCT_EXPORT_METHOD(testCallbackEventOne:(NSString *)name callback:(RCTResponseSenderBlock)callback)
@@ -108,6 +110,7 @@ RCT_EXPORT_METHOD(RNCallOC){
     [self.bridge.eventDispatcher sendAppEventWithName:@"EventReminder" body:@"永超"];
     
 }
+//我们不能在桥接通道里传递Date对象，所以需要把日期转化成字符串或数字来传递
 RCT_REMAP_METHOD(printDate, date1:(nonnull NSNumber *)d1 date2:(nonnull NSNumber *)d2  event:(RCTResponseSenderBlock)callback){
     NSDate* dt1 = [RCTConvert NSDate:d1];
     NSDate* dt2 = [RCTConvert NSDate:d2];
@@ -126,4 +129,18 @@ RCT_REMAP_METHOD(printDate, date1:(nonnull NSNumber *)d1 date2:(nonnull NSNumber
     }
     callback(@[[NSNull null], events]);
 }
+/*react native并不提供清除缓存功能,所以只能通过react native调用原生来实现计算缓存大小和清除缓存功能*/
+//  清理缓存
+RCT_EXPORT_METHOD(cleanCache:(RCTResponseSenderBlock)callback){
+       NSURLCache *httpCache = [NSURLCache sharedURLCache];
+       [httpCache removeAllCachedResponses];
+       NSUInteger cache = [httpCache currentDiskUsage];
+       callback(@[[NSNull null],@(cache)]);
+}
+ // 计算缓存
+  RCT_EXPORT_METHOD(cacheSize:(RCTResponseSenderBlock)callback){
+        NSURLCache *httpCache = [NSURLCache sharedURLCache];
+        NSUInteger cache = [httpCache currentDiskUsage];
+      callback(@[[NSNull null],@(cache)]);
+     }
 @end

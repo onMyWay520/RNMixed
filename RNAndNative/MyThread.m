@@ -11,6 +11,7 @@
 @implementation MyThread
 RCT_EXPORT_MODULE()
 //methodQueue方法在模块被初始化的时候会被调用一次，然后会被bridge保留
+//原生模块可以指定自己想在哪个队列中被执行
 -(dispatch_queue_t)methodQueue{
 //    return dispatch_get_main_queue();
      return dispatch_queue_create("com.facebook.React.AsyncLocalStorageQueue", DISPATCH_QUEUE_SERIAL);
